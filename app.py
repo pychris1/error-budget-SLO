@@ -15,7 +15,7 @@ if __name__ == '__main__':
         REQUESTS.inc() # Increment total requests
       
         # Simulate a 20% failure rate
-        if random.random() < 0.20:
+        if random.random() < 0.005:
             FAILURES.inc()
             print("Request Failed!")
         else:
